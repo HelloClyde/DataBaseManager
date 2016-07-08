@@ -1,0 +1,1 @@
+select name from employee where dno in (select dnumber from department where dname = 'ÑÐ·¢²¿')

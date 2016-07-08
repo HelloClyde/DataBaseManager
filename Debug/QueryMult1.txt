@@ -1,0 +1,2 @@
+select name from employee where ssn in (select essn from works_on where pno in (select pnumber from project where pname = '¹þÍ¬¹«Â·'))
+

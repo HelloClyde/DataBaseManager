@@ -1,0 +1,1 @@
+select essn from works_on where pno='p2'
