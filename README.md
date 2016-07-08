@@ -153,7 +153,7 @@ go
 
 实验结果:
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/006.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/007.png?raw=true)
 
 ##查询功能
 
@@ -185,43 +185,43 @@ go
 
 主函数
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/007.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/008.png?raw=true)
 
 SelectFromWhere函数
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/008.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/009.png?raw=true)
 
 Where函数
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/009.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/010.png?raw=true)
 
 ###测试用例与实验结果
 
 测试用例：
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/010.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/011.png?raw=true)
 
 实验结果：
 
 where pno=’p2’结果：
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/011.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/012.png?raw=true)
 
 select essn from works_on where pno=’p2’结果：
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/012.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/013.png?raw=true)
 
 where essn in (select essn from works_on where pno=’p2’)结果：
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/013.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/014.png?raw=true)
 
 where pno=’p1’ and essn in (select essn from works_on where pno=’p2’)结果：
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/014.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/015.png?raw=true)
 
 select essn from works_on where pno=’p1’ and essn in (select essn from works_on where pno=’p2’)结果：
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/015.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/016.png?raw=true)
 
 ##查询优化
 
@@ -243,17 +243,17 @@ select essn from works_on where pno=’p1’ and essn in (select essn from works
 
 ###程序流程图
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/016.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/017.png?raw=true)
 
 ###测试用例与实验结果
 
 测试用例：
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/017.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/018.png?raw=true)
 
 实验结果：
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/018.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/019.png?raw=true)
 
 ##数据库使用说明
 
@@ -263,21 +263,21 @@ select essn from works_on where pno=’p1’ and essn in (select essn from works
 
 1.	打开CMD。
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/019.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/020.png?raw=true)
 
 2.	将目录切换到程序目录。
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/020.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/021.png?raw=true)
 
 3.	直接运行程序会出现提示信息，加上SQL代码文件路径后就能正确执行了。
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/021.png?raw=true)
-
 ![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/022.png?raw=true)
+
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/023.png?raw=true)
 
 4.	结果直接在控制台显示。
 
-![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/023.png?raw=true)
+![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/024.png?raw=true)
 
 #总结
 
