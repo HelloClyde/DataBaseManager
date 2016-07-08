@@ -261,21 +261,21 @@ select essn from works_on where pno=’p1’ and essn in (select essn from works
 
 举例运行一下：
 
-1.	打开CMD。
+1.打开CMD。
 
 ![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/020.png?raw=true)
 
-2.	将目录切换到程序目录。
+2.将目录切换到程序目录。
 
 ![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/021.png?raw=true)
 
-3.	直接运行程序会出现提示信息，加上SQL代码文件路径后就能正确执行了。
+3.直接运行程序会出现提示信息，加上SQL代码文件路径后就能正确执行了。
 
 ![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/022.png?raw=true)
 
 ![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/023.png?raw=true)
 
-4.	结果直接在控制台显示。
+4.结果直接在控制台显示。
 
 ![](https://github.com/FieldSoft-HelloClyde/DataBaseManager/blob/master/snap/024.png?raw=true)
 
