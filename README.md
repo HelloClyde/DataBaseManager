@@ -106,25 +106,61 @@ Select解释Select语句，将内存地址集合中符合显示要求的内容�
 
 数据库二进制文件结构：
 
-```
-数据名称	数据类型	数据长度	辅助说明
-DBName	char	不定长，以0结束	
-Tables.size	int	4字节	
-Tables	TableClass	不定长	共Tables.size个，具体数据结构由Table二进制结构表说明
-		Table二进制结构表
-数据名称	数据类型	数据长度	辅助说明
-TableName	char	不定长，以0结束	
-TypeArray.size	Int	4字节	
-TypeArray	TypeClass	不定长	共TypeArray.size个，具体数据结构由Type二进制结构表说明
-TypeArrayLength	int	4字节	
-Data	链表	不定长，当链表指针为nullptr时为结束	该链表的节点长度由TypeArrayLength决定，其后4个字节为指向下一节点的指针
-		Type二进制结构表
-数据名称	数据类型	数据长度	辅助说明
-Name	char	不定长，以0结束	
-TypeName	char	不定长，以0结束	
-TypeSize	int	4字节	
-TypeLength	int	4字节	
-```
+<table>
+	<tr>
+		<td>数据名称</td><td>数据类型</td><td>数据长度</td><td>辅助说明</td>
+	</tr>
+	<tr>
+		<td>DBName</td><td>char</td><td>不定长，以0结束</td><td> </td>
+	</tr>
+	<tr>
+		<td>Tables.size</td><td>int</td><td>4字节</td><td> </td>
+	</tr>
+	<tr>
+		<td>Tables</td><td>TableClass</td><td>共Tables.size个</td><td>具体数据结构由Table二进制结构表说明</td>
+	</tr>
+</table>
+
+
+Table二进制结构表
+
+<table>
+	<tr>
+		<td>数据名称</td><td>数据类型</td><td>数据长度</td><td>辅助说明</td>
+	</tr>
+	<tr>
+		<td>TableName</td><td>char</td><td>不定长，以0结束</td><td> </td>
+	</tr>
+	<tr>
+		<td>TypeArray.size</td><td>Int</td><td>4字节</td><td> </td>
+	</tr>
+	<tr>
+		<td>TypeArray</td><td>TypeClass</td><td>共TypeArray.size个</td><td>具体数据结构由Type二进制结构表说明</td>
+	</tr>
+	<tr>
+		<td>TypeArrayLength</td><td>int</td><td>4字节</td><td> </td>
+	</tr>
+	<tr>
+		<td>Data</td><td>链表</td><td>不定长，当链表指针为nullptr时为结束</td><td>该链表的节点长度由TypeArrayLength决定，其后4个字节为指向下一节点的指针</td>
+	</tr>
+</table>
+
+Type二进制结构表
+
+<table>
+	<tr>
+		<td>数据名称</td><td>数据类型</td><td>数据长度</td><td>辅助说明</td>
+	</tr>
+	<tr>
+		<td>Name</td><td>char</td><td>不定长，以0结束</td><td> </td>
+	</tr>
+	<tr>
+		<td>TypeName</td><td>char</td><td>不定长，以0结束</td><td> </td>
+	</tr>
+	<tr>
+		<td>TypeSize</td><td>int</td><td>4字节</td><td> </td>
+	</tr>
+</table>
 
 ###ER图
 
